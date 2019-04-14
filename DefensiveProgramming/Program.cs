@@ -15,6 +15,9 @@ namespace DefensiveProgramming
             {
                 Console.Write("Input, please: ");
                 var data = Console.ReadLine();
+                if (String.IsNullOrEmpty(data))
+                    continue; 
+
                 Console.WriteLine(); 
                 Console.WriteLine("TRADTIONAL:");
                 HandleInput(data, traditional);
